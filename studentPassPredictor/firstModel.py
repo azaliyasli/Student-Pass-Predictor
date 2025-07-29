@@ -4,7 +4,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.tree import DecisionTreeClassifier
 
 #Create data frame and read data
-df = pd.read_csv('C:/Users/slkn5/Desktop/ML/student_performance.csv')
+df = pd.read_csv('student_performance.csv')
 print(df)
 
 #Decide on features

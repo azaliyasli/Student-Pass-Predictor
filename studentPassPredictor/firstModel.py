@@ -22,11 +22,11 @@ passStatus_model.fit(train_X,train_y)
 val_pred = passStatus_model.predict(val_X)
 print("Mean absolute error: ", mean_absolute_error(val_y, val_pred))
 
-# Get values from user
+#Get values from user
 studyHourOfStudent = float(input("Please enter your study hours: "))
 attendanceRateOfStudent = float(input("Please enter your attendance rate (%): "))
 
-# Create a new data
+#Create a new data frame
 new_df = pd.DataFrame({
     'StudyHours': [studyHourOfStudent],
     'AttendanceRate': [attendanceRateOfStudent]
